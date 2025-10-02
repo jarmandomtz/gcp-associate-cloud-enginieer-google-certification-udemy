@@ -50,6 +50,6 @@ Cloud Data Solutions
 - Cloud storage, 6
 - Cloud BigQuery, 2
 
-Cloud Monitoring
+Cloud Observability
 - Cloud Monitoring, 7
 - Cloud logging, 6

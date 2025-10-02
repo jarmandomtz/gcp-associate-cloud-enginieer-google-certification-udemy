@@ -1,0 +1,31 @@
+{
+  "displayName": "Alerta por fallo de Uptime Check - [myvm1-cli-uptime-failure-alert-policy-cli]",
+  "combiner": "OR",
+  "conditions": [
+    {
+      "displayName": "Fallo de Uptime Check",
+      "conditionThreshold": {
+        "filter": "metric.type=\"monitoring.googleapis.com/uptime_check/check_passed\" AND resource.type=\"uptime_url\"",
+        "comparison": "COMPARISON_LT",
+        "thresholdValue": 1,
+        "duration": "60s",
+        "trigger": {
+          "count": 1
+        },
+        "aggregations": [
+          {
+            "alignmentPeriod": "60s",
+            "crossSeriesReducer": "REDUCE_NONE",
+            "perSeriesAligner": "ALIGN_MEAN"
+          }
+        ]
+      }
+    }
+  ],
+  "notificationChannels": [
+    "projects/thematic-bee-473421-i7/notificationChannels/1388338056318751704"
+  ],
+  "documentation": {
+    "content": "La verificación de tiempo de actividad de la aplicación ha fallado. Revisa la disponibilidad de la URL."
+  }
+}

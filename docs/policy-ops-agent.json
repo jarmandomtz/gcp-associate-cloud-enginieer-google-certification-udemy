@@ -1,0 +1,10 @@
+{
+  "bindings": [
+    {
+      "role": "roles/ops.agent",
+      "members": [
+        "serviceAccount:873393274535-compute@developer.gserviceaccount.com"
+      ]
+    }
+  ]
+}
