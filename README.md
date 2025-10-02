@@ -1,8 +1,8 @@
 # GCP associate cloud engineer google certification - 150 demos (Udemy)
 
-URL: https://tcsglobal.udemy.com/course/gcp-associate-cloud-engineer-google-certification/learn/lecture/43762536#overview
-Source code: https://github.com/stacksimplify/google-cloud-certifications
-PPT: https://github.com/stacksimplify/google-cloud-certifications/blob/main/course-presentation/GCP-Associate-Cloud-Engineer-v5-Live.pdf
+- URL: https://tcsglobal.udemy.com/course/gcp-associate-cloud-engineer-google-certification/learn/lecture/43762536#overview
+- Source code: https://github.com/stacksimplify/google-cloud-certifications
+- PPT: https://github.com/stacksimplify/google-cloud-certifications/blob/main/course-presentation/GCP-Associate-Cloud-Engineer-v5-Live.pdf
 
 ![GCP services](imgs/gcp-acegc01.png)
 
@@ -50,6 +50,6 @@ Cloud Data Solutions
 - Cloud storage, 6
 - Cloud BigQuery, 2
 
-Cloud Monitoring
+Cloud Observability
 - Cloud Monitoring, 7
 - Cloud logging, 6

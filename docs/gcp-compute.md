@@ -2,7 +2,7 @@
 
 ## 1. Creation a VM instance
 
-URL: Compute-Engine/01-Compute-Engine-VM-Instances/01-01-VMInstance-Basics
+URL: [Compute-Engine/01-Compute-Engine-VM-Instances/01-01-VMInstance-Basics](https://github.com/stacksimplify/google-cloud-certifications/tree/main/Compute-Engine/01-Compute-Engine-VM-Instances/01-01-VMInstance-Basics)
 
 ```shell
 #Install nginX upload shell script to the instance
@@ -108,6 +108,28 @@ Deleted [https://www.googleapis.com/compute/v1/projects/thematic-bee-473421-i7/z
 gcloud compute instances list --filter="name=override-projlev-startuscript-cli"
 WARNING: The following filter keys were not present in any resource : name
 Listed 0 items.
-```
 
-## Cloud shell
+## Optional Commands - For reference
+# To list instances with their respective status and tags, run:
+gcloud compute instances list --format='table(name,status,tags.list())'
+
+# To list instances tagged with a specific tag, tag1, run:
+gcloud compute instances list --filter='tags:http-server'
+
+# Stop instance
+gcloud compute instances stop override-projlev-startuscript-cli \
+--zone=northamerica-south1-a 
+
+# Start instance
+gcloud compute instances start override-projlev-startuscript-cli \
+--zone=northamerica-south1-a 
+
+# Update VM: Enable deletion protection
+gcloud compute instances update override-projlev-startuscript-cli \
+    --zone=northamerica-south1-a \
+    --deletion-protection
+
+gcloud compute instances update override-projlev-startuscript-cli \
+    --zone=northamerica-south1-a \
+    --no-deletion-protection
+```
